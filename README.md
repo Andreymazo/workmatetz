@@ -63,7 +63,7 @@ FAQ
         pip install -r requirements.txt
 
 ##
-        python -m report_generator --report Report_1 --files file1.csv file2.csv file3.csv 
+        python -m report_generator --report Report_1 --files file_1.csv file_2.csv file3.csv
 
 ##              
 
