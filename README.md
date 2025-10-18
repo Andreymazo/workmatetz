@@ -68,7 +68,7 @@ FAQ
 
         pytest tests/
 
-проверяем
+перед тестами проверяем
 
 
 ##              echo $PYTHONPATH

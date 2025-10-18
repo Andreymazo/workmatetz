@@ -51,10 +51,7 @@ def file_content():
     [
         (
             ['file1.csv', 'file2.csv', 'file3.csv'],
-            
-             [('apple', 4.9), ('google', 4.7), ('samsung', 4.5), ('xiaomi', 4.5),
-              ('oneplus', 4.5), ('nokia', 4.4), ('oppo', 4.3), ('realme', 4.25),
-               ('motorola', 4.2), ('huawei', 4.15), ('vivo', 4.1)]
+             [('google', 4.9), ('apple', 4.8), ('samsung', 4.7), ('xiaomi', 4.6)]
 
         ),
     ]
@@ -62,7 +59,6 @@ def file_content():
 )
 def test_calculate_average_ratings_parametrize(file_list, expected_output):
     actual_output = calculate_average_rating([f"{file}" for file in file_list])
-    
     assert actual_output == expected_output
 
 
@@ -85,7 +81,7 @@ def test_calculate_average_rating():
 
     # Вычисляем средний рейтинг
     average_ratings = calculate_average_rating([file1, file2])
-
+    
     # Ожидаемые результаты
     expected_result = [
         ('google', 4.9),

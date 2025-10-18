@@ -23,7 +23,6 @@ def test_calculate_average_rating():
 
     # Вычисляем средний рейтинг
     average_ratings = calculate_average_rating([file1, file2])
-    print('------------------average_ratings', average_ratings)
     # Ожидаемые результаты
     expected_result = [('google', 4.9), ('apple', 4.8), ('samsung', 4.7), ('xiaomi', 4.6)]
     
@@ -37,16 +36,6 @@ def teardown():
         if os.path.exists(file):
             os.remove(file)
             
-# # Используем fixture для вызова main
-# def test_main_command_line_arguments_with_fixture(setup_argv):
-#     with patch('builtins.print') as mock_print:
-#         main()
-#         calls = [call('Brand\tAverage Rating'), call('apple\t4.75'), call('samsung\t4.60'), call('xiaomi\t4.6')]
-#         for call in calls:
-#             mock_print.assert_any_call(call.args[0])
-
-
-
 
 if __name__ == '__main__':
     pytest.main()
