@@ -30,7 +30,7 @@ def test_calculate_average_rating():
 
 
 # Удаление тестовых файлов после завершения тестирования
-def teardown():
+def test_teardown():
     files_to_remove = ['file1.csv', 'file2.csv']
     for file in files_to_remove:
         if os.path.exists(file):

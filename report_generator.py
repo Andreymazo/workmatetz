@@ -13,7 +13,6 @@ def calculate_average_rating(file_paths):
                 brand_ratings[row['brand']].append(float(row['rating']))
 
     average_ratings = {brand: sum(ratings) / len(ratings) for brand, ratings in brand_ratings.items()}
-    print("88888888888888888888", sorted(average_ratings.items(), key=lambda x: x[1], reverse=True))
     return sorted(average_ratings.items(), key=lambda x: x[1], reverse=True)
 
 def main():
